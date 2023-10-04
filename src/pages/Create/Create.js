@@ -7,13 +7,30 @@ function Create() {
   const [title, setTitle] = useState('')
   const [method, setMethod] = useState('')
   const [cookingTime, setCookingTime] = useState('')
+  const [newIngredient, setNewIngredient] = useState('')
+  const [ingredients, setIngredients] = useState([])
+
+
+  const handleSubmit= (e) => {
+    e.preventDefault()
+    console.log(title, method, cookingTime)
+  }
+
+  const handleAdd = (e) => {
+    e.preventDefault()
+     
+    if(newIngredient && !ingredients.includes(newIngredient)){
+      setIngredients(prevIngredients => [...prevIngredients, newIngredient])
+    }
+    setNewIngredient('')
+  }
 
 
   return (
     <div className='create'>
       <h2 className='page-title'>Add New Recepies</h2>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           <span>Recepie Title:</span>
           <input 
@@ -23,6 +40,20 @@ function Create() {
             required
           />
         </label>
+
+        <label>
+          <span>Ingredients: </span>
+          <div className='ingredients'>
+            <input
+              type='text'
+              onChange={(e) => setNewIngredient(e.target.value)}
+              value={newIngredient}
+            />
+            <button onClick={handleAdd} className='btn1'>Add</button>
+
+          </div>
+        </label>
+        <p className='ing'>Current Ingredients: {ingredients.map(i => <em key={i}>{i}, </em> )}</p>
 
         <label>
           <span>Recepie Method: </span>
@@ -44,7 +75,7 @@ function Create() {
           />
         </label>
 
-        <button className='btn'>Submit</button>
+        <button className='btn2'>Submit</button>
       </form>
 
     </div>
