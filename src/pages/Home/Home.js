@@ -1,4 +1,5 @@
 import { useFetch } from '../../hooks/useFetch'
+import RecepieList from '../../components/RecepieList'
 import './Home.css'
 
 
@@ -9,7 +10,7 @@ function Home() {
     <div className='home'>
       {error && <p className='error'>{error}</p>}
       {isLoading && <p className='loading'>Loading ...</p>}
-      {data && <RecepieList/>}
+      {data && <RecepieList recepies={data}/>}
 
     </div>
   )
