@@ -14,7 +14,7 @@
 }
 
 .card:hover{
-    transform: rotateZ(3deg);
+    transform: rotateZ(2deg);
     transition: ease-in 300ms;
 }
 
