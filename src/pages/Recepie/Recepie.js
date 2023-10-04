@@ -22,7 +22,7 @@ function Recepie() {
             ))}
           </ul>
           
-          <p>{recepie.method}</p>
+          <p className='method'>{recepie.method}</p>
 
         </div>
         )}
