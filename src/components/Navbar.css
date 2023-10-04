@@ -30,17 +30,18 @@
 }
 
 .brand{
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 700;
     text-decoration: none;
     color: rgb(158, 73, 31);
     transition: linear 300ms;
+    margin-left: 110px;
 }
 
 .brand:hover{
     color: rgb(93, 35, 9);
     word-spacing: 4px;
     letter-spacing: 2px;
-    margin-left: -10px;
+    margin-left: 100px;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 400ms;
 }
