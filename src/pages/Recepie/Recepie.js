@@ -1,4 +1,4 @@
-import 'Recepie.css'
+import './Recepie.css'
 
 
 function Recepie() {

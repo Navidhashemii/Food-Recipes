@@ -1,4 +1,4 @@
-import 'Create.css'
+import './Create.css'
 
 
 function Create() {
