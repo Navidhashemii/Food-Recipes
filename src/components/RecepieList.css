@@ -1,0 +1,52 @@
+.recepie-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 40px;
+}
+
+.card{
+    background-color: rgb(250, 243, 212);
+    padding: 0 15px 15px 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);  
+    transition: ease-in 300ms; 
+}
+
+.card:hover{
+    transform: rotateZ(3deg);
+    transition: ease-in 300ms;
+}
+
+.card h3{
+    font-size: 24px;
+    color: rgb(158, 73, 31);
+}
+
+.card p{
+    color: rgb(121, 121, 121);
+    font-size: smaller;
+}
+
+.card div{
+    color: rgb(74, 74, 74);
+}
+
+.card a{
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 20px auto 0;
+    color: rgb(206, 139, 72);
+    transition: linear 250ms;
+}
+
+.card a:hover{
+    background-color:rgb(206, 139, 72) ;
+    color: white;
+    transition: linear 300ms;
+}
