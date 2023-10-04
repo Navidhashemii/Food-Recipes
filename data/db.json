@@ -36,8 +36,46 @@
       ],
       "method": "1. Pre-heat the oven to 200C 5. Add the pasta, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. 5. Serve with a slaw of your choice",
       "cookingTime": "15 minutes"
+    },
+    {
+      "title": "Omlete",
+      "ingredients": [
+        "eggs",
+        "tomato",
+        "butter",
+        "mashrooms",
+        "salt",
+        "pepper"
+      ],
+      "method": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "cookingTime": "10 minutes",
+      "id": "2WUXr7_"
+    },
+    {
+      "title": "Mac and Cheese",
+      "ingredients": [
+        "pasta",
+        "cheese",
+        "pepper",
+        "mashrooms",
+        "sour cream"
+      ],
+      "method": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "cookingTime": "28 minutes",
+      "id": "BU2mLdy"
+    },
+    {
+      "title": "Pasta",
+      "ingredients": [
+        "Pasta",
+        "gronded meat",
+        "potatos",
+        "tomamto",
+        "mashrooms"
+      ],
+      "method": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "cookingTime": "38 minutes",
+      "id": "8iZe-eU"
     }
-    
-    
   ]
 }
