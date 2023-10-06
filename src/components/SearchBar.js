@@ -9,7 +9,9 @@ const navigate = useNavigate()
 
 const handleSubmit = (e) => {
     e.preventDefault()
+    e.target.reset()
     navigate(`/search?q=${term}`)
+    
 }
 
   return (
