@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import SearchBar from './SearchBar'
 
 
 function Navbar() {
@@ -7,7 +8,11 @@ function Navbar() {
     <div className='navbar'>
         <nav>
             <Link to='/' className='brand'>Food  Recepies</Link>
-            <Link to='/create' className='' >Create Recepie</Link>
+            <div className='nav-right'>
+              <SearchBar/>
+              <Link to='/create' >Create Recepie</Link>
+            </div>
+            
 
         </nav>
     </div>

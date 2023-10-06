@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Create.css'
 import { useFetch } from '../../hooks/useFetch'
+import { useNavigate } from 'react-router-dom'
 
 
 function Create() {
@@ -10,17 +11,17 @@ function Create() {
   const [cookingTime, setCookingTime] = useState('')
   const [newIngredient, setNewIngredient] = useState('')
   const [ingredients, setIngredients] = useState([])
+  
 
   const {postData, data, error} = useFetch('http://localhost:3000/recipes', 'POST')
+
+  const navigate = useNavigate()
 
   const handleSubmit= (e) => {
     e.preventDefault()
     postData({title, ingredients, method, cookingTime: cookingTime + " minutes"})
-    setTitle('')
-    setMethod('')
-    setCookingTime('')
-    setIngredients([])
   }
+  
 
   const handleAdd = (e) => {
     e.preventDefault()
@@ -31,12 +32,20 @@ function Create() {
     setNewIngredient('')
   }
 
+  useEffect(() => {
+
+    if(data){
+      navigate('/')
+    }
+
+  },[data])
+
 
   return (
     <div className='create'>
       <h2 className='page-title'>Add New Recepies</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}> 
         <label>
           <span>Recepie Title:</span>
           <input 
