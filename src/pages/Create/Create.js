@@ -43,11 +43,11 @@ function Create() {
 
   return (
     <div className='create'>
-      <h2 className='page-title'>Add New Recepies</h2>
+      <h2 className='page-title'>Add New Recipes</h2>
 
       <form onSubmit={handleSubmit}> 
         <label>
-          <span>Recepie Title:</span>
+          <span>Recipe Title:</span>
           <input 
             type='text'
             onChange={(e) => setTitle(e.target.value)}
@@ -71,7 +71,7 @@ function Create() {
         <p className='ing'>Current Ingredients: {ingredients.map(i => <em key={i}>{i}, </em> )}</p>
 
         <label>
-          <span>Recepie Method: </span>
+          <span>Recipe Method: </span>
           <textarea
             onChange={(e) => setMethod(e.target.value)}
             value={method}
