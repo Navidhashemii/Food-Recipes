@@ -18,12 +18,15 @@ const handleSubmit = (e) => {
     <div className='searchbar'>
 
         <form onSubmit={handleSubmit}>
+
+                <button className='btn'></button>
                 <input
                     type='text'
                     onChange={(e) => setTerm(e.target.value)} 
                     required
                     placeholder='Search... '
                 />
+                
 
         </form>
 
