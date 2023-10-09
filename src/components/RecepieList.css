@@ -50,3 +50,13 @@
     color: white;
     transition: linear 300ms;
 }
+
+.card.dark{
+    background-color: #555;
+}
+
+.card.dark p,
+.card.dark h3,
+.card.dark div {
+    color: #e4e4e4;
+}

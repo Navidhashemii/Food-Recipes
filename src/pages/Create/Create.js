@@ -42,16 +42,16 @@ function Create() {
   },[data])
 
 
-  const {color} = useTheme()
+  const {color, mode} = useTheme()
 
 
   return (
-    <div className='create'>
+    <div className={`create ${mode}`}>
       <h2 className='page-title'>Add New Recipes</h2>
 
       <form onSubmit={handleSubmit}> 
         <label>
-          <span>Recipe Title:</span>
+          <span className='span'>Recipe Title:</span>
           <input 
             type='text'
             onChange={(e) => setTitle(e.target.value)}
@@ -61,7 +61,7 @@ function Create() {
         </label>
 
         <label>
-          <span>Ingredients: </span>
+          <span className='ing-spn'>Ingredients: </span>
           <div className='ingredients'>
             <input
               type='text'
@@ -75,7 +75,7 @@ function Create() {
         <p style={{color: color}} className='ing'>Current Ingredients: {ingredients.map(i => <em key={i}>{i}, </em> )}</p>
 
         <label>
-          <span>Recipe Method: </span>
+          <span className='span'>Recipe Method: </span>
           <textarea
             onChange={(e) => setMethod(e.target.value)}
             value={method}
@@ -84,7 +84,7 @@ function Create() {
         </label>
 
         <label>
-          <span>Cooking Time(m): </span>
+          <span className='span'>Cooking Time(m): </span>
           <input
             type='number'
             onChange={(e) => setCookingTime(e.target.value)}

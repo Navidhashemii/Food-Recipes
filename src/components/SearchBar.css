@@ -12,7 +12,7 @@
     font-size: 16px;
     height: 42px;
     width: 120px;
-    background-color:rgb(181, 181, 181) ;
+    background-color:rgb(73, 73, 73) ;
     transition: ease-in 200ms;
 }
 
@@ -22,8 +22,7 @@
 }
 
 .searchbar input:focus::placeholder{
-    color: rgb(107, 107, 107);
-    transition: ease-in 200ms;
+    color:rgb(144, 144, 144) ;
 }
 
 

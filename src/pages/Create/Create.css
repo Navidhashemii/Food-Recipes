@@ -48,6 +48,10 @@
     color: rgb(65, 65, 65);
 }
 
+.span{
+    margin-bottom: 10px;
+}
+
 .ctime{
     display: flex;
     flex-direction: column;
@@ -105,4 +109,15 @@
     margin-top: -40px;
     font-size: 14px;
     color:rgb(223, 99, 42) ;
+}
+
+.ing-spn{
+    margin-bottom: -30px;
+}
+
+
+.create.dark span,
+.create.dark h2,
+.create.dark .ing{
+    color: #e4e4e4;
 }
