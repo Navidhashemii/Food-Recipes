@@ -18,7 +18,7 @@ export function ThemeProvider({children}) {
 
     const [state, dispatch] = useReducer(themeReducer, {
         color: '#B666D2',
-        mode: 'dark'
+        mode: 'light'
     })
 
     const changeColor = (color) => {
