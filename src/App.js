@@ -5,12 +5,14 @@ import Home from './pages/Home/Home'
 import Recepie from './pages/Recepie/Recepie'
 import Search from './pages/Search/Search'
 import './App.css';
+import ThemeSelector from './components/ThemeSelector'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar/>
+        <ThemeSelector/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/create' element={<Create/>}/>

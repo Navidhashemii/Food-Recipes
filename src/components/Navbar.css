@@ -23,7 +23,7 @@
 }
 
 .navbar a:last-child:hover{
-    color: rgb(158, 73, 31) ;
+    color: rgb(45, 45, 45) ;
     background-color:rgb(226, 226, 226) ;
     transition: ease-in 270ms;
     transform: skew(20px);
@@ -33,13 +33,12 @@
     font-size: 38px;
     font-weight: 700;
     text-decoration: none;
-    color: rgb(158, 73, 31);
+    color: rgb(220, 220, 220);
     transition: linear 300ms;
     margin-left: 80px;
 }
 
 .brand:hover{
-    color: rgb(93, 35, 9);
     word-spacing: 4px;
     letter-spacing: 2px;
     margin-left: 70px;

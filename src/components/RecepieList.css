@@ -6,7 +6,7 @@
 }
 
 .card{
-    background-color: rgb(250, 243, 212);
+    background-color: rgb(233, 233, 233);
     padding: 0 15px 15px 15px;
     border-radius: 8px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);  
@@ -20,7 +20,7 @@
 
 .card h3{
     font-size: 24px;
-    color: rgb(158, 73, 31);
+    color: rgb(46, 46, 46);
 }
 
 .card p{
@@ -41,12 +41,12 @@
     text-align: center;
     width: 100px;
     margin: 20px auto 0;
-    color: rgb(206, 139, 72);
+    color: rgb(118, 118, 118);
     transition: linear 250ms;
 }
 
 .card a:hover{
-    background-color:rgb(206, 139, 72) ;
+    background-color:rgb(80, 80, 80) ;
     color: white;
     transition: linear 300ms;
 }

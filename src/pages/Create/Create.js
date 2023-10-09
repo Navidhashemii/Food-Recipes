@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './Create.css'
 import { useFetch } from '../../hooks/useFetch'
 import { useNavigate } from 'react-router-dom'
+import { useTheme } from '../../hooks/useTheme'
 
 
 function Create() {
@@ -41,6 +42,9 @@ function Create() {
   },[data])
 
 
+  const {color} = useTheme()
+
+
   return (
     <div className='create'>
       <h2 className='page-title'>Add New Recipes</h2>
@@ -64,11 +68,11 @@ function Create() {
               onChange={(e) => setNewIngredient(e.target.value)}
               value={newIngredient}
             />
-            <button onClick={handleAdd} className='btn1'>Add</button>
+            <button onClick={handleAdd} style={{background: color}} className='btn1'>Add</button>
 
           </div>
         </label>
-        <p className='ing'>Current Ingredients: {ingredients.map(i => <em key={i}>{i}, </em> )}</p>
+        <p style={{color: color}} className='ing'>Current Ingredients: {ingredients.map(i => <em key={i}>{i}, </em> )}</p>
 
         <label>
           <span>Recipe Method: </span>
@@ -90,7 +94,7 @@ function Create() {
           />
         </label>
 
-        <button className='btn2'>Submit</button>
+        <button style={{background: color}} className='btn2'>Submit</button>
       </form>
       
 

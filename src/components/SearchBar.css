@@ -12,26 +12,26 @@
     font-size: 16px;
     height: 42px;
     width: 120px;
-    background-color:rgb(145, 75, 25) ;
+    background-color:rgb(181, 181, 181) ;
     transition: ease-in 200ms;
 }
 
 .searchbar input::placeholder{
-    color: rgba(216, 216, 216, 0.5);
+    color: rgb(240, 240, 240);
     transition: ease-in 200ms;
 }
 
 .searchbar input:focus::placeholder{
-    color: rgb(145, 75, 25);
+    color: rgb(107, 107, 107);
     transition: ease-in 200ms;
 }
 
 
 .searchbar input:focus{
     outline: none;
-    background-color: rgb(233, 185, 150);
+    background-color: rgb(230, 230, 230);
     transition: ease-in 200ms;
-    color: rgb(145, 75, 25);
+    color: rgb(28, 28, 28);
 }
 
 .btn{
@@ -45,5 +45,5 @@
     background-repeat: no-repeat;
     font-size: 16px;
     cursor: pointer;
-    background-color: rgb(233, 185, 150);
+    background-color: rgb(230, 230, 230);
 }
